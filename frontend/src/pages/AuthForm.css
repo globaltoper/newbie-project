@@ -1,0 +1,88 @@
+.auth-page {
+  min-height: 100svh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 320px;
+  padding: 32px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.auth-form h1 {
+  font-size: 28px;
+  margin: 0 0 12px;
+  text-align: center;
+}
+
+.auth-form input {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: inherit;
+  color: var(--text-h);
+  background: var(--bg);
+}
+
+.auth-form button {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.auth-form button.primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.auth-form button.secondary {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-h);
+}
+
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup {
+  background: var(--bg);
+  border-radius: 8px;
+  padding: 24px 32px;
+  min-width: 240px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.popup p {
+  color: var(--text-h);
+}
+
+.popup button {
+  margin-top: 16px;
+  padding: 8px 20px;
+  border-radius: 6px;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+}
